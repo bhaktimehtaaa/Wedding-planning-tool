@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+.navbar {
+  background-color: rgb(243, 244, 225);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.logo {
+  font-size: 30px;
+  font-weight: 600;
+  color: rgb(167, 111, 83);
+  text-align: left;
+}
+
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: rgb(180, 176, 85);
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.nav-links li a:hover {
+  color: rgb(167, 111, 83);
+}
+
+
+button {
+  background-color: rgb(186, 114, 114);
+  border: none;
+  border-radius: 10px;
+  padding: 8px 14px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: rgb(160, 90, 90);
+}
+
+button a {
+  color: rgb(244, 207, 207);
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: rgb(180, 176, 85);
+}
+
+
+#menu-toggle {
+  display: none;
+}
+
+
+body {
+  background-color: #fcfbf2;
+  display: flex;
+  flex-direction: column; /* vertical stacking */
+  min-height: 100vh;
+  margin: 0;
+  padding-top: 80px; /* prevents content from hiding under navbar */
+}
+
+
+main {
+  flex: 1; /* pushes footer down */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  
+}
+
+ 
+#banner1{
+    background-image: url(https://www.marriottindiaweddings.com/resourcefiles/mainimages/thailand.jpg?version=10012025165832);
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+body p{
+    font-size: 30px;
+   line-height: 1.4;
+   color: #121212;
+   max-width: 1000px;
+   margin: 0 auto;
+   text-align: center;
+}
+.navbar {
+    background-color: rgb(243, 244, 225);
+    padding-left: 15px;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+}
+.logo a {
+    font-size: 35px;
+    font-weight: 600;
+    color: rgb(167, 111, 83);
+}
+li{
+    list-style: none;
+    display: inline-block;
+}
+li a{
+    color: rgb(180, 176, 85);
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+button{
+    background-color: rgb(186, 114, 114);
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+button a{
+    color: rgb(244, 207, 207);
+    font-weight: bold;
+    font-size: 15px;
+}#banner2{
+    background-image: url(https://www.thetamarindtree.in/wp-content/uploads/2024/06/SAJ01985-750x491.jpg);
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+#banner3{
+    background-image: url(https://cdn0.weddingwire.in/article/4333/3_2/960/jpg/123334-maharaja-bhog-2.jpeg);
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+#banner5{
+    background-image: url(https://i.pinimg.com/originals/f3/58/f2/f358f2ff109a48fa69d2ed608173021a.jpg);
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+#banner4{
+     background-image: url(https://media.istockphoto.com/id/157316138/photo/beautiful-romantic-honeymoon-hotel-suite-empty-copy-space.jpg?s=612x612&w=0&k=20&c=W-8Kh1flB8J-6DjlRg525k-L0briklgZNs62tzRFX6k=);
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+#banner6{
+      background-image: url(https://newsmeter.in/h-upload/2020/12/12/289234-indian-wedding-reception-checklist-ideas.jpg);
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+footer {
+  background-color: rgb(243, 244, 225);
+  color: rgb(167, 111, 83);
+  text-align: center;
+  padding: 25px 10px;
+  border-top: 2px solid rgb(180, 176, 85);
+}
+
+.footer-container p {
+  margin: 5px 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: rgb(167, 111, 83);
+  margin: 0 12px;
+  font-size: 24px;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: rgb(180, 176, 85);
+  transform: scale(1.2);
+}
+
+.contact {
+  margin-top: 15px;
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  background-color: rgb(186, 114, 114);
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  background-color: rgb(180, 176, 85);
+  color: white;
+  transform: scale(1.05);
+}
