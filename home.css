@@ -181,9 +181,9 @@ section {
   background-color: transparent ;
   
   border: 3px solid beige;
-  height: 50px;
+  height: 100px;
   width: 100x;
-  font-size: 20px;
+  font-size: 16px;
 }
 .button{
     background-image: url(https://i.pinimg.com/736x/43/49/a5/4349a5724f2c8f6f05edd2a058f05d25.jpg);
@@ -357,4 +357,25 @@ footer {
     font-size: 16px;
     margin-left: 0;
   }
+}
+
+@media (max-width: 850px) {
+
+    .but {
+        height: auto;      /* remove huge fixed height */
+        width: auto;       /* remove huge width */
+        padding: 10px 20px; 
+        font-size: 14px;
+        border-width: 2px;
+    }
+
+    .but a {
+        font-size: 14px;   /* make inner text smaller */
+    }
+
+    /* Optional — reduce title size too */
+    h1, .title, .hero-title {
+        font-size: 26px;
+        line-height: 1.3;
+    }
 }
