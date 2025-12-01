@@ -248,3 +248,57 @@ body {
     height: 200px;
   }
 }
+
+
+
+footer {
+  background-color: rgb(243, 244, 225);
+  color: rgb(167, 111, 83);
+  text-align: center;
+  padding: 25px 10px;
+  border-top: 2px solid rgb(180, 176, 85);
+}
+
+.footer-container p {
+  margin: 5px 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: rgb(167, 111, 83);
+  margin: 0 12px;
+  font-size: 24px;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: rgb(180, 176, 85);
+  transform: scale(1.2);
+}
+
+.contact {
+  margin-top: 15px;
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  background-color: rgb(186, 114, 114);
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  background-color: rgb(180, 176, 85);
+  color: white;
+  transform: scale(1.05);
+}  
+    

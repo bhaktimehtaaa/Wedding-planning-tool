@@ -1,60 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
 body {
-    font-family: Arial, sans-serif;
-    background-image: url("https://thumbs.dreamstime.com/b/luxurious-wedding-stage-vintage-sofas-red-drapery-chandeliers-floral-decor-royal-wedding-stage-decor-375832148.jpg");
-    background-color: beige;
-    margin: 0;
-    padding: 0;
-}
-* {
-   
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
-    font-family: "Bricolage Grotesque", sans-serif;
-   font-optical-sizing: auto;
-   font-weight: 400;
-   font-style: normal;
-   
-}
-/* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  background-image: url("https://thumbs.dreamstime.com/b/luxurious-wedding-stage-vintage-sofas-red-drapery-chandeliers-floral-decor-royal-wedding-stage-decor-375832148.jpg");
+  background-color: beige;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
 }
 
-* {
-   
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
-    font-family: "Bricolage Grotesque", sans-serif;
-   font-optical-sizing: auto;
-   font-weight: 400;
-   font-style: normal;
-   
-}
-/* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-/* NAVBAR */
 .navbar {
   background-color: rgb(243, 244, 225);
   width: 100%;
   position: fixed;
   top: 0;
-  left: 0;
   z-index: 1000;
+  left: 0;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* NAVBAR CONTAINER */
 .container {
   display: flex;
   align-items: center;
@@ -64,14 +34,13 @@ body {
   margin: auto;
 }
 
-/* LOGO */
+
 .logo {
   font-size: 30px;
   font-weight: 600;
   color: rgb(167, 111, 83);
 }
 
-/* NAV LINKS */
 .nav-links {
   display: flex;
   align-items: center;
@@ -80,25 +49,24 @@ body {
 }
 
 .nav-links li a {
-  text-decoration: none;
   color: rgb(180, 176, 85);
   font-size: 18px;
   font-weight: bold;
-  transition: color 0.2s ease;
+  transition: 0.2s;
+  text-decoration: none;
 }
 
 .nav-links li a:hover {
   color: rgb(167, 111, 83);
 }
 
-/* BUTTONS */
+
 button {
   background-color: rgb(186, 114, 114);
   border: none;
   border-radius: 10px;
   padding: 8px 14px;
   cursor: pointer;
-  transition: background 0.2s ease-in-out;
 }
 
 button:hover {
@@ -107,26 +75,24 @@ button:hover {
 
 button a {
   color: rgb(244, 207, 207);
-  font-weight: bold;
   font-size: 15px;
+  font-weight: bold;
   text-decoration: none;
-  
 }
 
-/* HAMBURGER ICON */
+
 .menu-icon {
   display: none;
-  font-size: 30px;
+  font-size: 35px;
   cursor: pointer;
   color: rgb(180, 176, 85);
 }
 
-/* HIDE CHECKBOX */
+
 #menu-toggle {
   display: none;
 }
 
-/* ========== RESPONSIVE DESIGN ========== */
 @media (max-width: 850px) {
   .menu-icon {
     display: block;
@@ -143,218 +109,127 @@ button a {
     gap: 15px;
     padding: 15px 30px;
     display: none;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
 
+  #menu-toggle:checked ~ .nav-links {
+    display: flex;
   }
-ss
-
-/* NAVBAR CONTAINER */
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px 40px;
-  max-width: 1200px;
-  margin: auto;
 }
 
-/* LOGO */
-.logo {
-  font-size: 30px;
-  font-weight: 600;
-  color: rgb(167, 111, 83);
-}
-
-/* NAV LINKS */
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  list-style: none;
-}
-
-.nav-links li a {
-  text-decoration: none;
-  color: rgb(180, 176, 85);
-  font-size: 18px;
-  font-weight: bold;
-  transition: color 0.2s ease;
-}
-
-.nav-links li a:hover {
-  color: rgb(140, 114, 101);
-}
-
-/* BUTTONS */
-button {
-  background-color: rgb(186, 114, 114);
-  border: none;
-  border-radius: 10px;
-  padding: 8px 14px;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-}
-
-button:hover {
-  background-color: rgb(190, 165, 165);
-}
-
-button a {
-  color: rgb(244, 207, 207);
-  font-weight: bold;
-  font-size: 15px;
-  text-decoration: none;
-  
-}
-
-/* HAMBURGER ICON */
-.menu-icon {
-  display: none;
-  font-size: 30px;
-  cursor: pointer;
-  color: rgb(180, 176, 85);
-}
-
-/* HIDE CHECKBOX */
-#menu-toggle {
-  display: none;
-}
-
-/* ========== RESPONSIVE DESIGN ========== */
-@media (max-width: 850px) {
-  .menu-icon {
-    display: block;
-  }
-
-  .nav-links {
-    position: absolute;
-    top: 65px;
-    left: 0;
-    width: 100%;
-    background-color: rgb(243, 244, 225);
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-    padding: 15px 30px;
-    display: none;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
-
-  }
-
-
-.menu {
-    background-color: beige;
-    text-align: center;
-    padding: 10px;
-}
-
-.menu a {
-    color: rgb(3, 3, 0);
-    text-decoration: none;
-    margin: 15px;
-    font-weight: bold;
-}
-
-.menu a:hover {
-    text-decoration: underline;
-}
 
 .heading {
-    text-align: center;
-    color: rgb(19, 19, 1);
-    margin-top: 20px;
+  text-align: center;
+  margin-top: 100px;
+  color: rgb(167, 111, 83);
+  font-size: 36px;
 }
 
 .quote {
-    text-align: center;
-    color: #555;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-top: 6px;
+  color: rgba(0,0,0,0.6);
+  font-style: italic;
 }
 
 .form-box {
-    width: 400px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px gray;
+  width: 400px;
+  margin: 40px auto;
+  padding: 25px;
+  background: rgba(255,255,255,0.95);
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(167,111,83,0.15);
 }
 
-h2 {
-    text-align: center;
-    color: #003366;
+
+.form-box label {
+  display: block;
+  color: rgb(120, 80, 60);
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
 }
 
-input, select {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.form-box input[type="text"],
+.form-box input[type="email"],
+.form-box input[type="tel"],
+.form-box input[type="password"],
+.form-box input[type="date"],
+.form-box select {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid rgba(167,111,83,0.25);
+  background: linear-gradient(180deg, #fff, #fdf7f2);
+  color: rgb(60, 40, 35);
+  font-size: 15px;
+  margin-bottom: 14px;
+  transition: 0.2s ease;
 }
+
+.form-box ::placeholder {
+  color: rgba(60,40,35,0.5);
+  font-style: italic;
+}
+
+
+.form-box input:focus,
+.form-box select:focus {
+  border-color: rgb(167, 111, 83);
+  box-shadow: 0 0 8px rgba(167,111,83,0.3);
+  outline: none;
+}
+
 
 .btn {
-    background-color: #003366;
-    color: white;
-    border: none;
-    padding: 8px 15px;
-    margin-top: 5px;
-    cursor: pointer;
-    border-radius: 5px;
+  background: linear-gradient(180deg, rgb(186,114,114), rgb(160,90,90));
+  color: #fff;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 8px;
+  transition: 0.2s ease;
 }
 
 .btn:hover {
-    background-color: #002244;
+  background: rgb(180, 176, 85);
 }
+
+
+@media (max-width: 500px) {
+  .form-box {
+    width: 90%;
+    margin: 100px auto;
+    padding: 20px;
+  }
+}
+
 
 footer {
   background-color: rgb(243, 244, 225);
   color: rgb(167, 111, 83);
   text-align: center;
   padding: 25px 10px;
-  border-top: 2px solid rgb(180, 176, 85);
-}
-
-.footer-container p {
-  margin: 5px 0;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.social-icons {
-  margin-top: 10px;
-}
-
-.social-icons a {
-  color: rgb(167, 111, 83);
-  margin: 0 12px;
-  font-size: 24px;
-  transition: all 0.3s ease;
 }
 
 .social-icons a:hover {
-  color: rgb(180, 176, 85);
   transform: scale(1.2);
-}
-
-.contact {
-  margin-top: 15px;
 }
 
 .whatsapp-btn {
   display: inline-block;
   background-color: rgb(186, 114, 114);
-  color: rgb(255, 255, 255);
+  color: white;
   padding: 10px 20px;
   border-radius: 8px;
   font-weight: 600;
+  transition: 0.3s;
   text-decoration: none;
-  transition: all 0.3s ease;
 }
 
 .whatsapp-btn:hover {
   background-color: rgb(180, 176, 85);
-  color: white;
   transform: scale(1.05);
 }
